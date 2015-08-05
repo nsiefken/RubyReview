@@ -1,14 +1,4 @@
-# U3.W8-9: Implement a Rectangle Class
 
-
-# I worked on this challenge [by myself, with: ].
-# This challenge took me [#] hours.
-
-
-# Pseudocode
-
-
-# Initial Solution
 class Rectangle
 
   def initialize(width, length)
@@ -16,24 +6,22 @@ class Rectangle
     @length = length
   end
 
+  def area
+  	@width * @length
+  end
+
+  def perimeter
+  	@width * 2 + @length * 2
+  end
+
+  def diagonal
+  	diag_squared = @width**2 + @length**2
+  	Math.sqrt(diag_squared)
+  end
+
+  def square?
+  	@width == @length
+  end
 
 end
 
-
-
-
-# Refactored Solution
-
-
-
-
-
-
-# DRIVER TESTS GO BELOW THIS LINE
-
-
-
-
-
-
-# Reflection
