@@ -20,3 +20,12 @@ p x == [3, 4]
 p x.push([5, 6]) == [3, 4, [5, 6]]
 p x.flatten! == [3, 4, 5, 6]
 p x == [3, 4, 5, 6]
+
+
+hash = {"k" => 2, "h" => 3, "j" => 1}
+p hash.values == [2, 3, 1]
+min_value = hash.values.min
+p min_value == 1
+p hash.key(min_value) == "j"
+
+p false if 1 > 2
